@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title %} Home Page{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row" style="margin-top:45px">
+
+  <div class="col">
+
+  </div>
+  <div class="col-10">
+    <div class="col text-center">
+      <h3 style="margin-bottom:20px;">Importar novos arquivos</h3>
+    </div>
+    <form action='/importacoes/' method='post' enctype="multipart/form-data">
+      <div class="input-group mb-3">
+
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="inputGroupFile01" name="catalogo">
+      <label class="custom-file-label" for="inputGroupFile01">Escolher catálogo</label>
+    </div>
+  </div>
+  <div class="input-group mb-3">
+
+<div class="custom-file">
+  <input type="file" class="custom-file-input" id="inputGroupFile01" name="configs">
+  <label class="custom-file-label" for="inputGroupFile01">Escolher configuração adicional</label>
+</div>
+</div>
+    <button type="submit" value="submit" class="btn btn-primary">Importar</button>
+  </form>
+  </div>
+  <div class="col">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+
+  </div>
+  <div class="col text-center">
+    <h3 style="margin-top:30px; margin-bottom:20px;">Arquivos disponíveis</h3>
+
+  </div>
+  <div class="col">
+
+  </div>
+
+
+
+</div>
+<div class="row">
+
+  <div class="col">
+
+  </div>
+  <div class="col-5">
+    <div class="text-center">
+    <h4>Catálogos</h4>
+    </div>
+
+    <ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+  </div>
+  <div class="col-5">
+    <div class="text-center">
+    <h4>Configurações</h4>
+    </div>
+    <ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+  </div>
+  <div class="col">
+
+  </div>
+
+
+</div>
+</div>
+
+{% endblock %}
